@@ -93,7 +93,7 @@ var loadDomosFromServer = function loadDomosFromServer() {
 };
 
 var setup = function setup(csrf) {
-    ReactDOM.render(React.createElement(DomoForm, { csrf: csrf }), document.querySelector("#makerDomo"));
+    ReactDOM.render(React.createElement(DomoForm, { csrf: csrf }), document.querySelector("#makeDomo"));
 
     ReactDOM.render(React.createElement(DomoList, { domos: [] }), document.querySelector("#domos"));
 

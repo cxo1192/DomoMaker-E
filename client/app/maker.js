@@ -73,7 +73,7 @@ const loadDomosFromServer = () => {
 
 const setup = function(csrf){
     ReactDOM.render(
-        <DomoForm csrf={csrf} />, document.querySelector("#makerDomo")
+        <DomoForm csrf={csrf} />, document.querySelector("#makeDomo")
     );
 
     ReactDOM.render(
