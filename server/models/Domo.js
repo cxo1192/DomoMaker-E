@@ -66,10 +66,8 @@ DomoSchema.statics.findByOwner = (ownerId, callback) => {
 //   return DomoModel.find(search).select('name age level').exec(callback);
 // };
 
-
-
-
-DomoSchema.statics.deleteDomo = (domoName, callback) => { //this type of function is only ok if the name is unique 
+// this type of function is only ok if the name is unique
+DomoSchema.statics.deleteDomo = (domoName/* , callback*/) => {
   const search = {
     name: domoName,
   };
